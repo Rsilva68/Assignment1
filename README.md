@@ -4,11 +4,11 @@
  
 Welcome to my repository.
 
-###LINK
+### _LINK_
 
 I will be able to link the other 2 **individual** assignments via this link [Data Entry Analysis and Data Exploration] (www.
 
-##**IMAGE** 
+## **IMAGE** 
 
 ![GITHUB] (https://images.app.goo.gl/ei88n7zvoto8DoxP9)
  
