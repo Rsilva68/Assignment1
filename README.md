@@ -26,4 +26,4 @@ Rhonda Silva rhondasilva@unomaha.edu
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the [GNU GENERAL PUBLIC LICENSE] License - see the LICENSE.md file for details
