@@ -10,7 +10,7 @@ I will be able to link the other 2 **individual** assignments via this link [Dat
 
 ## **IMAGE** 
 
-![GITHUB] (https://images.app.goo.gl/ei88n7zvoto8DoxP9)
+! [GITHUB] (https://images.app.goo.gl/ei88n7zvoto8DoxP9)
  
 
 
