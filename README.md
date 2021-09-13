@@ -6,7 +6,11 @@ Welcome to my repository.
 
 ### _LINK_
 
-I will be able to link the other 2 **individual** assignments via this link [Data Entry Analysis and Data Exploration] (www.
+I will be able to link the other 2 **individual** assignments via this link
+
+[Data Entry Analysis] (http://placeholder.com)
+
+ [Data Exploration] (http://placeholder.com)
 
 ## **IMAGE** 
 
