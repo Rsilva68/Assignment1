@@ -14,7 +14,7 @@ I will be able to link the other 2 **individual** assignments via this link
 
 ## **IMAGE** 
 
-![GITHUB](https://images.app.goo.gl/ei88n7zvoto8DoxP9)
+![myself](https://scontent-ort2-1.xx.fbcdn.net/v/t1.18169-9/13346702_1287358184624963_2069032134499781918_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=-qrT2KEzvckAX-kqkOB&tn=qD1w_04MrmqFzRY5&_nc_ht=scontent-ort2-1.xx&oh=5183a614b25dfd31cdfc85b79239e6f0&oe=61672D4C)
  
 
 
