@@ -8,9 +8,9 @@ Welcome to my repository.
 
 I will be able to link the other 2 **individual** assignments via this link
 
-[Data Entry Analysis] (http://placeholder.com)
+[Data Entry Analysis](http://placeholder.com)
 
- [Data Exploration] (http://placeholder.com)
+ [Data Exploration](http://placeholder.com)
 
 ## **IMAGE** 
 
