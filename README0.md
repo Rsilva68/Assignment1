@@ -11,7 +11,7 @@
 
 ![PLOT1](https://raw.githubusercontent.com/Rsilva68/Assignment1/main/Rplot.png)
 
-![PLOT4](https://drive.google.com/file/d/10CLtZnfsTKkEad1Z2VGYRWrnNv73JeRT/view?usp=sharing)
+![PLOT4](https://github.com/Rsilva68/Assignment1/blob/main/Rplot05.png)
 
 ![LinePlot](https://drive.google.com/file/d/1IYysezZJ5-NsQURWnQKf7_770tvGBRud/view?usp=sharing)
 
