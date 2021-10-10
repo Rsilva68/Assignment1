@@ -8,7 +8,7 @@ Welcome to my repository.
 
 I will be able to link the other 2 **individual** assignments via this link
 
-[Data Entry Analysis](http://placeholder.com)
+[Data Entry Analysis](https://github.com/Rsilva68/Assignment1/blob/main/Data%20Exploration)
 
  [Data Exploration](http://placeholder.com)
 
