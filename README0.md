@@ -9,13 +9,13 @@
 ## **PLOTS**
 
 
-![PLOT1](https://drive.google.com/file/d/1CUCdGwxN4Doc1t2-9fbgWxsQp-MamTiL/view?usp=sharing)
+![PLOT1](https://drive.google.com/file/d/1r3-KAr5K4QFCTiP9_MHS9z9I9HULGDPz/view?usp=sharing)
 
-![PLOT4](https://drive.google.com/file/d/1jQDsDqKURNIiEwtQlaMshSPrInsmV5yN/view?usp=sharing)
+![PLOT4](https://drive.google.com/file/d/10CLtZnfsTKkEad1Z2VGYRWrnNv73JeRT/view?usp=sharing)
 
-![LinePlot](https://drive.google.com/file/d/1v18esgl3xrufxwwA_ksAK7zG4BKGyeS-/view?usp=sharing)
+![LinePlot](https://drive.google.com/file/d/1IYysezZJ5-NsQURWnQKf7_770tvGBRud/view?usp=sharing)
 
-![PLOT2](https://drive.google.com/file/d/1Z6aa9zizhsmmcGxyzCNL2zggJ7rh5f34/view?usp=sharing)
+
 ## Authors
 
 Rhonda Silva rhondasilva@unomaha.edu
