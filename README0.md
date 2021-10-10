@@ -13,7 +13,7 @@
 
 ![PLOT4](https://github.com/Rsilva68/Assignment1/blob/main/Rplot05.png)
 
-![LinePlot](https://drive.google.com/file/d/1IYysezZJ5-NsQURWnQKf7_770tvGBRud/view?usp=sharing)
+![BARPlot](https://github.com/Rsilva68/Assignment1/blob/main/Rplot04.png)
 
 
 ## Authors
