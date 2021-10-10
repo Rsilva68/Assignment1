@@ -1,0 +1,69 @@
+---
+title: "HFS.Hispanic"
+author: "Rhonda Silva"
+date: "10/9/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+# For Cleaning & Prep
+
+install.packages('Amelia')
+
+
+missmap(HFS.Hispanic, col=c('red' , 'yellow'))
+
+HFS.Hispanic <- na.omit(HFS.Hispanic)
+
+###  FOR Hispanic Analysis & Visualization
+
+ggplot(HFS.Hispanic, aes(x=ethnic_identity)) + geom_density(fill='blue')
+
+ggplot(HFS.Hispanic, aes(x=ethnic_identity)) + geom_density(fill='blue')
+> HFS.Hispanic$facility = factor(HFS.Hispanic$facility)
+> HFS.Hispanic$program_type = factor(HFS.Hispanic$program_type, order=TRUE, levels = c(3, 2, 1))
+
+
+## Ethnic Identity
+>ggplot(HFS.Hispanic, aes(x= ethnic_identity)) +
+geom_bar(width=0.5, fill = "red") + 
+geom_text(stat='count' , aes(label=stat(count)), vjust=-0.5) + 
+theme_classic()
+
+## Build a scatter plot
+
+> ggplot(data  = HFS.Hispanic) + geom_point(mapping = aes(x=ethnic_identity, y= program_name))
+
+## Build a bar chart
+
+> ggplot(data  = HFS.Hispanic) + geom_bar(mapping = aes(x=ethnic_identity))
+
+## Build a line chart in R   requires a value of time
+## Analysis  What ethnicity was served on each date
+
+
+> ggplot(data  = HFS.Hispanic) + geom_line(mapping = aes(x=actual_date, y= ethnic_identity))
+
+
+> ggplot(data  = HFS.Hispanic) + geom_point((mapping = aes(x=ethnic_identity, y=facility , color = program_unit_description)))
