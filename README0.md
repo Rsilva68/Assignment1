@@ -9,7 +9,7 @@
 ## **PLOTS**
 
 
-![PLOT1](https://drive.google.com/file/d/1r3-KAr5K4QFCTiP9_MHS9z9I9HULGDPz/view?usp=sharing)
+![PLOT1](https://raw.githubusercontent.com/Rsilva68/Assignment1/main/Rplot.png)
 
 ![PLOT4](https://drive.google.com/file/d/10CLtZnfsTKkEad1Z2VGYRWrnNv73JeRT/view?usp=sharing)
 
