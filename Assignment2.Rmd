@@ -68,3 +68,5 @@ theme_classic()
 
 
 > ggplot(data  = HFS.Hispanic) + geom_point((mapping = aes(x=ethnic_identity, y=facility , color = program_unit_description)))
+> ![GEOM_POINT](C:\Users\rsilv\OneDrive\Documents\UNO\ISQA8600-DataToDecisions\Rplot05.png)
+> 
