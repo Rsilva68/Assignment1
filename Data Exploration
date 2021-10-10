@@ -1,22 +1,46 @@
 # _DATA EXPLORATION_
 
- **Rhonda Silva**
- 
+title: "HFS.Hispanic"
+author: "Rhonda Silva"
+date: "10/9/2021"
 
 
-### _LINK_
+## Including Plots
 
-I will be able to link the other 2 **individual** assignments via this link
 
-[Data Entry Analysis](https://github.com/Rsilva68/Assignment1/blob/main/Assignment2.Rmd)
+###  FOR Hispanic Analysis & Visualization
 
- [Data Exploration](http://placeholder.com)
+ggplot(HFS.Hispanic, aes(x=ethnic_identity)) + geom_density(fill='blue')
 
-## **IMAGE** 
+ggplot(HFS.Hispanic, aes(x=ethnic_identity)) + geom_density(fill='blue')
+ HFS.Hispanic$facility = factor(HFS.Hispanic$facility)
+ HFS.Hispanic$program_type = factor(HFS.Hispanic$program_type, order=TRUE, levels = c(3, 2, 1))
 
-![myself](https://scontent-ort2-1.xx.fbcdn.net/v/t1.18169-9/13346702_1287358184624963_2069032134499781918_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=-qrT2KEzvckAX-kqkOB&tn=qD1w_04MrmqFzRY5&_nc_ht=scontent-ort2-1.xx&oh=5183a614b25dfd31cdfc85b79239e6f0&oe=61672D4C)
- 
 
+## Ethnic Identity
+ggplot(HFS.Hispanic, aes(x= ethnic_identity)) +
+geom_bar(width=0.5, fill = "red") + 
+geom_text(stat='count' , aes(label=stat(count)), vjust=-0.5) + 
+theme_classic()
+
+## Build a scatter plot
+
+ggplot(data  = HFS.Hispanic) + geom_point(mapping = aes(x=ethnic_identity, y= program_name))
+
+## Build a bar chart
+
+ ggplot(data  = HFS.Hispanic) + geom_bar(mapping = aes(x=ethnic_identity))
+
+## Build a line chart in R   requires a value of time
+## Analysis  What ethnicity was served on each date
+
+
+ggplot(data  = HFS.Hispanic) + geom_line(mapping = aes(x=actual_date, y= ethnic_identity))
+
+
+ggplot(data  = HFS.Hispanic) + geom_point((mapping = aes(x=ethnic_identity, y=facility , color = program_unit_description)))
+
+![GEOM_POINT](https://drive.google.com/file/d/1CUCdGwxN4Doc1t2-9fbgWxsQp-MamTiL/view?usp=sharing
 
 ## Authors
 
