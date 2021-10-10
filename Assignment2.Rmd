@@ -73,3 +73,6 @@ theme_classic()
 ![GEOM_POINT](https://drive.google.com/file/d/1CUCdGwxN4Doc1t2-9fbgWxsQp-MamTiL/view?usp=sharing)
 
 > 
+![Rplot02](https://user-images.githubusercontent.com/89612866/136704856-c89288d9-00a2-418b-a58d-86d3300bf792.png)
+
+![Rplot04](https://user-images.githubusercontent.com/89612866/136704869-943d3066-892f-4b05-a390-6ca5b54ff4d6.png)
