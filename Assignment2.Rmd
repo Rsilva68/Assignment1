@@ -1,4 +1,4 @@
-## Data Exploration Assignment for Heartland Family Service's Data
+Data Exploration Assignment for Heartland Family Service's Data
 ---
 title: "HFS.Hispanic"
 author: "Rhonda Silva"
