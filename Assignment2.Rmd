@@ -14,35 +14,73 @@ knitr::opts_chunk$set(echo = TRUE)
 Of the clients receiving services that identified as Hispanic or Mexican, how many received services at which branch
 
 
+### Dataset Used
 
-###  FOR Hispanic Analysis & Visualization
+> HFS.Hispanic<-HFS
 
-ggplot(HFS.Hispanic, aes(x=ethnic_identity)) + geom_density(fill='blue')
+> str(HFS.Hispanic)
 
-ggplot(HFS.Hispanic, aes(x=ethnic_identity)) + geom_density(fill='blue')
-> HFS.Hispanic$facility = factor(HFS.Hispanic$facility)
-> HFS.Hispanic$program_type = factor(HFS.Hispanic$program_type, order=TRUE, levels = c(3, 2, 1))
+### To see the names of Columns
 
+> names(HFS.Hispanic)  
 
-## Ethnic Identity
->ggplot(HFS.Hispanic, aes(x= ethnic_identity)) +
-geom_bar(width=0.5, fill = "red") + 
-geom_text(stat='count' , aes(label=stat(count)), vjust=-0.5) + 
-theme_classic()
+### Deleted Columns that I didn't need and named it HFS.Hispanic.cleaned
 
-## Build a scatter plot
+> HFS.Hispanic.cleaned<-HFS.Hispanic[c(1:4,7,9,17,25,30,46,48,49:51)]
+> names(HFS.Hispanic.cleaned)
 
-> ggplot(data  = HFS.Hispanic) + geom_point(mapping = aes(x=ethnic_identity, y= program_name))
+"gender"                   "program_name"             "program_type"            
+"facility"                 "actual_date"              "event_name"              
+"date_entered"             "program_unit_description" "general_location"        
+"age"                      "simple_race"              "ethnic_identity"         
+"gender_identity"          "sexual_orientation"
 
-## Build a bar chart
+ 
+** I now have 14 columns & 8745 rows
 
-> ggplot(data  = HFS.Hispanic) + geom_bar(mapping = aes(x=ethnic_identity))
-
-## Build a line chart in R   requires a value of time
-## Analysis  What ethnicity was served on each date
-
-
-> ggplot(data  = HFS.Hispanic) + geom_line(mapping = aes(x=actual_date, y= ethnic_identity))
+> ncol(HFS.Hispanic.cleaned);nrow(HFS.Hispanic.cleaned)
+ 14
+ 
+ 8745
 
 
-> ggplot(data  = HFS.Hispanic) + geom_point((mapping = aes(x=ethnic_identity, y=facility , color = program_unit_description)))
+1. **One scatter plot with three variables, properly labeled; choose your representation of the third variable based on what’s best for representing the data.**  
+* Three used variables are:
+  * ethnic_identity
+  * program_unit_description  
+  * Adding a third variable in geom point using colour=program_name 
+```r
+ggplot(data = HFS.Hispanic.cleaned, aes(x =ethnic_identity , y =program_unit_description , colour=program_name)) +geom_point(size = 3)+
+     labs(title = "Scatter plot with three variables", y = "Unit Description of the Program", x = "Ethnicity")
+```
+| ![Scatter Plot](https://github.com/Rsilva68/Assignment1/blob/main/Scatter%20Plot.png)
+| -
+The above scatter plot is composed of three variables: ethnic_identity, program_unit description and program_name. from this plot , we can say that people have mostly participated in the mental health program. The second major program is for the substance use program. The plot also describes that NON HISPANIC clients are most likely  to be treated in the programs.
+
+2. **One faceted plot of two variables, properly labeled.**  
+* Two used variables are:
+  * ethnic_identity
+  * facility  
+```r
+ggplot(data = HFS.Hispanic.cleaned, aes(facility,ethnic_facility)) +
+ geom_line(color = "steelblue", size = 1) +
+  geom_point(color = "steelblue") +
+   labs(title = "Faceted plot of two variables Ethnic Identity vs Facility", y = "facility", x = "ethnic_identity") +
+    facet_wrap(.~program_type)
+```
+| ![Faceted Plot](https://github.com/Rsilva68/Assignment1/blob/main/Faceted%20Plot.png)
+| -
+I have divided the plot using the ethnic_identity of the clients. This plot uses two variables Ethnic Identity and Facility. We can say from the plot that due to uncollected data or unknown/missing values there are more separations in the plot. However , with the data in hand, the created plot shows the differences of programs being served from the various facilities accross various ethnicities.
+
+3. **One bar chart, properly labeled.**  
+* Used variable is:
+  * ethnic Identity  
+```r
+ggplot(data = HFS.Hispanic.cleaned)+
+    geom_bar(mapping = aes(x=ethnic_identity),colour="white",fill="blue")+
+    labs(title = "One bar chart of Ethnic Identity", y = "Count of Clients of Each Ethnicity", x = "Client Ethnicity")
+```
+| ![Bar Chart](https://github.com/Rsilva68/Assignment1/blob/main/Bar%20Chart.png)
+| -
+This Bar chart is composed of only the Ethnicity of the Client of HFS. It shows how many clients are in each ethnicity group. The charts shows that most clients of HFS are Non Hispanic. Also we can observe that out of almost 8000 clients approximately 400 clients are Hispanic, Unknown or Not Collected
+
